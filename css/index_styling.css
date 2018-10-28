@@ -1,0 +1,96 @@
+html {
+    font-family: "Tahoma", "sans-serif";
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+}
+/* from load page animation */
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+-webkit-@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+-moz-@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+-ms-@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+-o-@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* html styling */
+
+/* Home Logo Styling */
+.home_full_logo h1 {
+  text-align: center;
+}
+
+.home_full_logo h1 img {
+  width: 650px;
+  height: 550px;
+}
+
+/* Navigation Styling */
+.navigation {
+
+} /* cannot be removed */
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.navigation ul li {
+  margin: 0;
+}
+
+.navigation ul li a {
+  padding: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #2A2A2A; /* variable */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+.navigation ul li a:hover {
+  opacity: 0.7;
+}
+
+
+
+/*@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+  .navigation ul {
+    flex-flow: column wrap;
+    text-align: center;
+  }
+
+  .navigation ul li {
+    margin: 5px 0;
+  }
+
+
+}
+*/

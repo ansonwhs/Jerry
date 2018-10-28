@@ -1,0 +1,5 @@
+1. subscribe system
+2. crew member append interface
+3. photo upload interface
+4. responsive website design
+5. handle trigger navigation interface

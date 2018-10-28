@@ -1,0 +1,34 @@
+/* header home button styling */
+header {
+  width: auto;
+  height: 70px;
+}
+
+.home_btn {
+  position: absolute;
+  top: 0;
+  left: calc(50vw - 35px);
+}
+
+.home_btn img {
+  width: 70px;
+  height: 70px;
+}
+
+/* Photo gallery styling */
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 3% 7%;
+}
+
+.gallery div {
+  width: 21.5%;
+  align-items: flex-start;
+  margin: 0 1%;
+}
+
+.gallery div img{
+  margin: 1%;
+  width: 100%;
+}
