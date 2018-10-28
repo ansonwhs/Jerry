@@ -1,90 +1,57 @@
-/* FadeIn Animation */
-html {
-    font-family: "Tahoma", "sans-serif";
-    animation: fadeIn 2s;
-    -webkit-animation: fadeIn 2s;
-    -moz-animation: fadeIn 2s;
-    -ms-animation: fadeIn 2s;
-    -o-animation: fadeIn 2s;
-}
 /* from load page animation */
-@keyframes fadeIn{
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
+html {
+  font-family: "Tahoma", "sans-serif";
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s; }
 
--webkit-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
--moz-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
--ms-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
--o-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-/* body styling for js */
-.rm_logo, .crew_description, .break {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-
-/* header styling */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 header {
   width: 100%;
   height: 300px;
-  z-index: 1000;
-  overflow: hidden;
-}
-
-.nav_btn_area{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90px;
-}
-
-.nav_btn {
-  position: fixed;
-  top: 20px;
-  left: calc(50vw - 25px);
-  z-index: 1000;
-}
-
-.nav_btn img{
-  width: 50px;
-  height: 50px;
-}
-
-.rm_logo {
-  position: relative;
-  top: 120px;
-  left: calc(50vw - 50px);
-}
-
-.rm_logo img {
-  width: 100px;
-  height: 100px;
-}
+  z-index: 1000; }
+  header .nav_btn {
+    position: fixed;
+    top: 20px;
+    left: calc(50vw - 25px);
+    z-index: 1000; }
+    header .nav_btn img {
+      width: 50px;
+      height: 50px; }
+  header .rm_logo {
+    position: relative;
+    top: 120px;
+    left: calc(50vw - 50px); }
+    header .rm_logo img {
+      width: 100px;
+      height: 100px; }
 
 /* hr styling*/
-
 .break {
   width: 65vw;
   margin-bottom: 50px;
-  border-color: #AEEEEE;
-}
+  border-color: #AEEEEE; }
 
 /* crew member list styling*/
 .crew_description {
@@ -92,96 +59,96 @@ header {
   flex-flow: row wrap;
   justify-content: space-between;
   align-content: space-evenly;
-  margin:0 80px;
-  opacity:1;
-}
-
-.crew0_icon {
-  background-image: url("../img/crew_photo/crew0.png");
-}
-
-.crew1_icon {
-  background-image: url("../img/crew_photo/crew1.png")
-}
-
-.crew2_icon img{
-  width: auto;
-  height: 24vw;
-  border-radius: 50%;
-
-  /*background-image: url("../img/crew_photo/crew2.png")*/
-}
-
-.crew0_icon, .crew1_icon, .crew2_icon {
-  background-size: 150%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 24vw;
-  height: 24vw;
-  border-radius: 50%;
-  transition: background 0.75s ease;
-}
-
-.icon_hover:hover, .icon_hover:hover, .icon_hover:hover{
-  background-size: 160%;
-}
-.crew_description div h2 {
-  text-align: center;
-  margin-top: 30px;
-  color: #345678;
-}
-
-.crew_description div p {
-  text-align: center;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  color: #345678;
-}
+  margin: 0 80px;
+  opacity: 1; }
+  .crew_description .crew0 .crew0_icon {
+    background-image: url("../img/crew_photo/crew0.png"); }
+  .crew_description .crew0 .icon_background {
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24vw;
+    height: 24vw;
+    border-radius: 50%;
+    transition: background 0.75s ease; }
+  .crew_description .crew0 .icon_hover:hover {
+    background-size: 160%; }
+  .crew_description .crew0 h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #345678; }
+  .crew_description .crew0 p {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #345678; }
+  .crew_description .crew1 .crew1_icon {
+    background-image: url("../img/crew_photo/crew1.png"); }
+  .crew_description .crew1 .icon_background {
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24vw;
+    height: 24vw;
+    border-radius: 50%;
+    transition: background 0.75s ease; }
+  .crew_description .crew1 .icon_hover:hover {
+    background-size: 160%; }
+  .crew_description .crew1 h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #345678; }
+  .crew_description .crew1 p {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #345678; }
+  .crew_description .crew2 .crew2_icon {
+    background-image: url("../img/crew_photo/crew2.png"); }
+  .crew_description .crew2 .icon_background {
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24vw;
+    height: 24vw;
+    border-radius: 50%;
+    transition: background 0.75s ease; }
+  .crew_description .crew2 .icon_hover:hover {
+    background-size: 160%; }
+  .crew_description .crew2 h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #345678; }
+  .crew_description .crew2 p {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #345678; }
 
 /* navigation styling */
 .onclick_nav {
   opacity: 0;
   transition: all 0.5s ease;
-  z-index: 1000;
-}
+  z-index: 1000; }
+  .onclick_nav .img_nav {
+    display: block;
+    position: fixed;
+    top: 160px;
+    left: calc(50% - 120px); }
+    .onclick_nav .img_nav a {
+      margin: 0 15px; }
+  .onclick_nav .text_nav {
+    position: fixed;
+    top: 400px;
+    left: calc(50% - 61.725px); }
+    .onclick_nav .text_nav ul li {
+      list-style: none;
+      margin: 15px 0;
+      text-align: center; }
+      .onclick_nav .text_nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 20px; }
 
-.img_nav {
-  display: block;
-  position: fixed;
-  top: 160px;
-  left: calc(50% - 120px);
-}
-
-.img_nav a {
-  margin:0 15px;
-}
-
-.text_nav {
-  position: fixed;
-  top: 400px;
-  left: calc(50% - 61.725px);
-}
-
-
-
-.text_nav ul li {
-  list-style: none;
-  margin: 15px 0;
-  text-align: center;
-}
-
-.text_nav ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 20px;
-}
-
-/*@media only screen and (max-width: 480px) and (orientation: portrait) {
-
-  .crew_description {
-    display: flex;
-    flex-flow: column wrap;
-
-  }
-}*/
+/*# sourceMappingURL=crew_styling.css.map */
