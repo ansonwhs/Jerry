@@ -42,7 +42,8 @@ header {
   header .rm_logo {
     position: relative;
     top: 120px;
-    left: calc(50vw - 50px); }
+    left: calc(50vw - 50px);
+    transition: all 0.75s; }
     header .rm_logo img {
       width: 100px;
       height: 100px; }
@@ -51,7 +52,8 @@ header {
 .break {
   width: 65vw;
   margin-bottom: 50px;
-  border-color: #AEEEEE; }
+  border-color: #AEEEEE;
+  transition: all 0.75s; }
 
 /* crew member list styling*/
 .crew_description {
@@ -60,7 +62,8 @@ header {
   justify-content: space-between;
   align-content: space-evenly;
   margin: 0 80px;
-  opacity: 1; }
+  opacity: 1;
+  transition: all 0.75s; }
   .crew_description .crew0 .crew0_icon {
     background-image: url("../img/crew_photo/crew0.png"); }
   .crew_description .crew0 .icon_background {

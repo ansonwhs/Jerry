@@ -55,6 +55,7 @@ header {
     position: relative;
     top: 120px;
     left: calc(50vw - 50px);
+    transition: all 0.75s;
 
     img {
       width: 100px;
@@ -70,6 +71,7 @@ header {
   width: 65vw;
   margin-bottom: 50px;
   border-color: #AEEEEE;
+  transition: all 0.75s;
 }
 
 /* crew member list styling*/
@@ -80,6 +82,7 @@ header {
   align-content: space-evenly;
   margin:0 80px;
   opacity:1;
+  transition: all 0.75s;
 
   .crew0 {
 
