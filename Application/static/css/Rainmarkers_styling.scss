@@ -38,6 +38,7 @@ html {
 
 /* Home Logo Styling */
 .home_full_logo h1 {
+  margin-top: 150px;
   text-align: center;
 }
 
@@ -76,6 +77,10 @@ html {
 }
 
 @media (max-width: 480px) {
+
+  .home_full_logo h1 img {
+    width: 100%;
+  }
 
   .navigation {
 

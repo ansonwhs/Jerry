@@ -30,6 +30,7 @@ html {
 /* html styling */
 /* Home Logo Styling */
 .home_full_logo h1 {
+  margin-top: 150px;
   text-align: center; }
 
 .home_full_logo h1 img {
@@ -59,10 +60,13 @@ html {
     opacity: 0.7; }
 
 @media (max-width: 480px) {
+  .home_full_logo h1 img {
+    width: 100%; }
+
   .navigation ul {
     flex-flow: column wrap;
     text-align: center; }
     .navigation ul li {
       margin: 5px 0; } }
 
-/*# sourceMappingURL=index_styling.css.map */
+/*# sourceMappingURL=Rainmarkers_styling.css.map */
