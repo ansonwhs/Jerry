@@ -3,17 +3,17 @@
 
 <!-- Main body of index.html -->
 {% block section %}
-    <section class = "home_full_logo">
+    <div class = "home_full_logo">
       <h1><img src = "../static/img/rm_full_logo.png" alt = "full_logo"></h1>
-    </section>
+    </div>
 
-    <section class = "navigation">
+    <div class = "navigation">
       <nav class = "main_nav">
         <ul class = "main_ul">
-          <li><a href = "Crew.html">The Crew</a></li>
-          <li><a href = "Jerry.html">Jerry Law</a></li>
-          <li><a href = "Tony.html">Tony Laam</a></li><br>
+          <li><a href = "{{ url_for('crew') }}">The Crew</a></li>
+          <li><a href = "{{ url_for('crew') }}">Jerry Law</a></li>
+          <li><a href = "{{ url_for('crew') }}">Tony Laam</a></li><br>
         </ul>
       </nav>
-    </section>
+    </div>
 {% endblock %}

@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block section %}
+<div class = "onclick_nav">
+  <div class = "img_nav">
+    <a href = "#"><img src = "#" alt = "crew0_nav"></a>
+    <a href = "#"><img src = "#" alt = "crew1_nav"></a>
+  </div>
+
+  <div class = "text_nav">
+    <ul>
+      <li><a href = "{{ url_for('index') }}">Home</a></li>
+      <li><a href = "{{ url_for('crew') }}">The Crew</a></li>
+      <li><a href = "{{ url_for('index') }}">Jerry Law</a></li>
+      <li><a href = "{{ url_for('index') }}">Tony Laam</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- showed content -->
+<header>
+  <div class = "nav_btn_area"></div>
+  <a href = "#" class = "nav_btn" ><img src = "../static/img/nav.png" alt = "nav_logo"></a><br>
+  <a href = "{{ url_for('index') }}" class = "rm_logo"><img src = "../static/img/rm_logo.png" alt = "rm_logo"></a>
+</header>
+
+<hr class = "break">
+
+<div class = "crew_description">
+  <div class = "crew0">
+    <p class = "crew0_icon icon_hover icon_background"><a href = "#"></a></p>
+    <h2>Jerry Law</h2>
+    <p>Co-founder, photography</p>
+  </div>
+
+  <div class = "crew1">
+    <p class = "crew1_icon icon_hover icon_background"><a href = "#"></a></p>
+    <h2>Tony Laam</h2>
+    <p>Co-founder, photography</p>
+  </div>
+
+  <div class = "crew2">
+    <p class = "crew2_icon icon_hover icon_background"><a href = "#"></a></p>
+    <h2>Someone</h2>
+    <p>Co-founder, photography</p>
+  </div>
+
+  <div class = "crew2">
+    <p class = "crew2_icon icon_hover icon_background"><a href = "#"></a></a></p>
+    <h2>Someone</h2>
+    <p>Co-founder, photography</p>
+  </div>
+</div>
+{% endblock %}
