@@ -1,6 +1,9 @@
 <!-- inherit the html code -->
 {% extends "layout.html" %}
 
+{% block link %}<link rel = "stylesheet" href = "{{ url_for ('static', filename = 'css/Rainmarkers_styling.css') }}">{% endblock %}
+
+
 <!-- Main body of index.html -->
 {% block section %}
     <div class = "home_full_logo">

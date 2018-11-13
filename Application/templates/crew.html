@@ -1,7 +1,9 @@
 {% extends "layout.html" %}
 
+{% block link %}<link rel = "stylesheet" href = "{{ url_for ('static', filename = 'css/Crew_styling.css') }}">{% endblock %}
+
 {% block section %}
-<div class = "onclick_nav">
+<section class = "onclick_nav">
   <div class = "img_nav">
     <a href = "#"><img src = "#" alt = "crew0_nav"></a>
     <a href = "#"><img src = "#" alt = "crew1_nav"></a>
@@ -15,38 +17,39 @@
       <li><a href = "{{ url_for('index') }}">Tony Laam</a></li>
     </ul>
   </div>
-</div>
+</section>
 
 <!-- showed content -->
 <header>
-  <div class = "nav_btn_area"></div>
-  <a href = "#" class = "nav_btn" ><img src = "../static/img/nav.png" alt = "nav_logo"></a><br>
+  <div class = "nav_btn_area">
+    <a href = "#" class = "nav_btn" ><img src = "../static/img/nav.png" alt = "nav_logo"></a><br>
+  </div>
   <a href = "{{ url_for('index') }}" class = "rm_logo"><img src = "../static/img/rm_logo.png" alt = "rm_logo"></a>
 </header>
 
 <hr class = "break">
 
 <div class = "crew_description">
-  <div class = "crew0">
+  <div class = "crew0 crew">
     <p class = "crew0_icon icon_hover icon_background"><a href = "#"></a></p>
     <h2>Jerry Law</h2>
     <p>Co-founder, photography</p>
   </div>
 
-  <div class = "crew1">
+  <div class = "crew1 crew">
     <p class = "crew1_icon icon_hover icon_background"><a href = "#"></a></p>
     <h2>Tony Laam</h2>
     <p>Co-founder, photography</p>
   </div>
 
-  <div class = "crew2">
+  <div class = "crew2 crew">
     <p class = "crew2_icon icon_hover icon_background"><a href = "#"></a></p>
     <h2>Someone</h2>
     <p>Co-founder, photography</p>
   </div>
 
-  <div class = "crew2">
-    <p class = "crew2_icon icon_hover icon_background"><a href = "#"></a></a></p>
+  <div class = "crew2 crew">
+    <p class = "crew2_icon icon_hover icon_background"><a href = "#"></a></p>
     <h2>Someone</h2>
     <p>Co-founder, photography</p>
   </div>

@@ -1,0 +1,124 @@
+/* from load page animation */
+html {
+  font-family: "Tahoma", "sans-serif";
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* for onclick navigation */
+.onclick_nav {
+  display: none;
+  position: fixed;
+}
+/* img navigation */
+.onclick_nav .img_nav {
+  text-align: center;
+}
+
+.onclick_nav .img_nav a {
+  margin: 10px;
+}
+/* text navigation */
+.onclickn_nav .text_nav ul {
+  text-align: center;
+}
+
+.onclick_nav .text_nav ul li {
+  list-style: none;
+}
+
+.onclick_nav .text_nav ul li a {
+  text-decoration: none;
+  color: lightgrey;
+  text-transform: uppercase;
+}
+
+/* for header */
+header {
+  text-align: center;
+  height: 200px;
+  width: 100%;
+}
+/* navigation button */
+header .nav_btn_area {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+header .nav_btn_area a img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+/* home logo */
+header .rm_logo img{
+  margin-top: 50px;
+  width: 75px;
+  height: 75px;
+}
+
+/* for break line */
+.break {
+  width: 80%;
+  align-items: center;
+  background-color: lightgrey;
+}
+
+/* for crew information */
+.crew_description {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+.crew_description .crew .icon_background {
+  background-image: url("../img/crew_photo/crew0.png");
+  background-size: 150%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 22vw;
+  height: 22vh;
+  transition: background 0.5s ease;
+}
+
+.crew_description .crew .icon_background:hover {
+  background-size: 160%;
+}
+
+.crew_description .crew h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.crew_description .crew p {
+  text-align: center;
+  color: lightgrey;
+}
