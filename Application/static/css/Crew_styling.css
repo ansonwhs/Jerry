@@ -100,7 +100,7 @@ header .rm_logo img{
 
 .crew_description .crew .img_container {
   width: 22vw;
-  height: 22vh;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -110,7 +110,7 @@ header .rm_logo img{
   transition: background 0.5s ease;
 }
 
-.crew_description .crew .icon_background:hover {
+.crew_description .crew  {
 
 }
 
